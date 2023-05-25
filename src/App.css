@@ -1,38 +1,267 @@
-.App {
+body {
+  font-family: "Gill Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #252525;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+
+ul {
+  height: 30px;
+  background-color: #252525;
+  color: white;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: center;
+}
+
+ul li {
+  align-self: center;
+  list-style: none;
+  font-weight: bold;
+}
+
+.logo {
+  background-color: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  background-image: url("/public/images/logo.png");
+  background-size: cover;
+}
+
+.conditions {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-image: url('/public/images/hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.container-title>h1,
+.container-title>h3 {
+  color: white;
+  font-weight: bold;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-title h1 {
+  font-size: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container-title h3 {
+  font-size: 25px;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.terms-privacy {
+  padding: 10px 50px;
+  background-color: #252525;
+  color: white;
+  height: 90vh;
+}
+
+.product-title h2 {
+  font-size: 35px;
+  margin-bottom: 0;
+}
+
+.product-title h3 {
+  margin-top: 0;
+  color: #999;
+}
+
+.footer-container {
+  padding: 10px 50px;
+  background-color: #252525;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-social {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ol {
+  list-style: none;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: white;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.social-media {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
+
+.character-list {
+  padding: 10px 50px;
+  background-color: #252525;
+}
+
+.character-list h2 {
+  text-align: center;
+  color: white;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.card {
+  background-color: rgba(153, 153, 153, 0.4);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
+  border-radius: 10px;
+  height: 450px;
+  width: 220px;
+}
+
+.card-title {
+  text-align: center;
+  background-color: #252525;
+  font-weight: bold;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-description {
+  padding: 0px 10px;
+}
+
+.card-button {
+  margin-top: auto;
+  background-color: #71EA00;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 0 0 10px 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.card-button:hover {
+  box-shadow: 0px -4px 8px #71EA00;
+}
+
+.characterinfo {
+  background-color: #252525;
+}
+
+.characterinfo-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  color: white;
+}
+
+.characterinfo-left {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.characterinfo-image {
+  height: 90vh;
+}
+
+.characterinfo-right {
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid white;
+  padding: 10px 30px;
+}
+
+.characterinfo-name {
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 15px;
+  width: 95%;
+}
+
+.characterinfo-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  height: auto;
+  gap: 10px;
+  width: 90%;
+}
+
+.characterinfo-episode {
+  background-color: #71EA00;
+  color: white;
+  padding: 10px;
+  min-width: 20px;
+  text-align: center;
+}
+
+.characterinfo-footer {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-top: 20px;
+}
+
+.characterinfo-button {
+  background-color: #71EA00;
+  color: white;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.characterinfo-button:hover {
+  box-shadow: 0px -4px 8px #71EA00;
 }
