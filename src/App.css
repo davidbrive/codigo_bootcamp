@@ -156,7 +156,7 @@ ol {
   justify-content: center;
   color: white;
   border-radius: 10px;
-  height: 450px;
+  height: 500px;
   width: 220px;
 }
 
@@ -164,6 +164,7 @@ ol {
   text-align: center;
   background-color: #252525;
   font-weight: bold;
+  /* margin-bottom: auto; */
 }
 
 .card img {
@@ -264,4 +265,40 @@ ol {
 
 .characterinfo-button:hover {
   box-shadow: 0px -4px 8px #71EA00;
+}
+
+.characterinfo-pages {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.characterinfo-change_page {
+  background-color: #71EA00;
+  color: white;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.characterinfo-change_page:hover:not(:disabled) {
+  box-shadow: 0px -4px 8px #71EA00;
+}
+
+.characterinfo-change_page:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.characterinfo-number {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
 }
