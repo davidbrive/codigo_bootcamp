@@ -1,0 +1,120 @@
+.character-list {
+    padding: 10px 50px;
+    background-color: #252525;
+}
+
+.character-list h2 {
+    text-align: center;
+    color: white;
+}
+
+.characterinfo {
+    background-color: #252525;
+}
+
+.characterinfo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    color: white;
+}
+
+.characterinfo-left {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.characterinfo-image {
+    height: 90vh;
+}
+
+.characterinfo-right {
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid white;
+    padding: 10px 30px;
+}
+
+.characterinfo-name {
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 15px;
+    width: 95%;
+}
+
+.characterinfo-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 10px;
+    width: 90%;
+}
+
+.characterinfo-episode {
+    background-color: #71EA00;
+    color: white;
+    padding: 10px;
+    min-width: 20px;
+    text-align: center;
+}
+
+.characterinfo-footer {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+}
+
+.characterinfo-button {
+    background-color: #71EA00;
+    color: white;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.characterinfo-button:hover {
+    box-shadow: 0px -4px 8px #71EA00;
+}
+
+.characterinfo-pages {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.characterinfo-change_page {
+    background-color: #71EA00;
+    color: white;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.characterinfo-change_page:hover:not(:disabled) {
+    box-shadow: 0px -4px 8px #71EA00;
+}
+
+.characterinfo-change_page:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.characterinfo-number {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}

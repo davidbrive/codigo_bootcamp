@@ -1,0 +1,48 @@
+.navbar {
+    background-color: #252525;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+.navbar-list {
+    height: 30px;
+    background-color: #252525;
+    color: white;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: center;
+}
+
+.navbar-list li {
+    align-self: center;
+    list-style: none;
+    font-weight: bold;
+}
+
+.logo {
+    background-color: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    background-image: url("/public/images/logo.png");
+    background-size: cover;
+}
+
+.conditions {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: transparent;
+    cursor: pointer;
+}

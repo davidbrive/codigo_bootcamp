@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 export function Navbar() {
     const navigate = useNavigate()
     return (
-        <nav>
-            <ul>
+        <nav className="navbar">
+            <ul className="navbar-list">
                 <li>
                     <button
                         onClick={() => navigate("/home")}

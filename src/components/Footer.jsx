@@ -5,7 +5,7 @@ export function Footer() {
     return (
         <div className="footer-container">
             <div className="footer-social">
-                <ol>
+                <ol className="footer-list">
                     <li>
                         <button
                             onClick={() => navigate("/home")}
