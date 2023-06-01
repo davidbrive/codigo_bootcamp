@@ -5,6 +5,12 @@
 @import url("./css/terms.css");
 @import url("./css/footer.css");
 
+:root {
+  --white: white;
+  --black: #252525;
+  --green: #71EA00;
+}
+
 body {
   font-family: "Gill Sans", sans-serif;
   display: flex;

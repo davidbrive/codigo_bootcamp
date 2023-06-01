@@ -1,21 +1,21 @@
 .character-list {
     padding: 10px 50px;
-    background-color: #252525;
+    background-color: var(--black);
 }
 
 .character-list h2 {
     text-align: center;
-    color: white;
+    color: var(--white);
 }
 
 .characterinfo {
-    background-color: #252525;
+    background-color: var(--black);
 }
 
 .characterinfo-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    color: white;
+    color: var(--white);
 }
 
 .characterinfo-left {
@@ -32,13 +32,13 @@
 .characterinfo-right {
     display: flex;
     flex-direction: column;
-    border-left: 2px solid white;
+    border-left: 2px solid var(--white);
     padding: 10px 30px;
 }
 
 .characterinfo-name {
     text-align: center;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--white);
     padding-bottom: 15px;
     width: 95%;
 }
@@ -53,8 +53,8 @@
 }
 
 .characterinfo-episode {
-    background-color: #71EA00;
-    color: white;
+    background-color: var(--green);
+    color: var(--white);
     padding: 10px;
     min-width: 20px;
     text-align: center;
@@ -68,8 +68,8 @@
 }
 
 .characterinfo-button {
-    background-color: #71EA00;
-    color: white;
+    background-color: var(--green);
+    color: var(--white);
     cursor: pointer;
     transition: box-shadow 0.3s ease;
     border: none;
@@ -80,7 +80,7 @@
 }
 
 .characterinfo-button:hover {
-    box-shadow: 0px -4px 8px #71EA00;
+    box-shadow: 0px -4px 8px var(--green);
 }
 
 .characterinfo-pages {
@@ -91,8 +91,8 @@
 }
 
 .characterinfo-change_page {
-    background-color: #71EA00;
-    color: white;
+    background-color: var(--green);
+    color: var(--white);
     cursor: pointer;
     transition: box-shadow 0.3s ease;
     padding: 5px 10px;
@@ -105,7 +105,7 @@
 }
 
 .characterinfo-change_page:hover:not(:disabled) {
-    box-shadow: 0px -4px 8px #71EA00;
+    box-shadow: 0px -4px 8px var(--green);
 }
 
 .characterinfo-change_page:disabled {
@@ -114,7 +114,7 @@
 }
 
 .characterinfo-number {
-    color: white;
+    color: var(--white);
     font-weight: bold;
     font-size: 14px;
 }

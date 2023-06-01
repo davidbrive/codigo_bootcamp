@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #252525;
+    background-color: var(--black);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -8,8 +8,8 @@
 
 .navbar-list {
     height: 30px;
-    background-color: #252525;
-    color: white;
+    background-color: var(--black);
+    color: var(--white);
     width: 70%;
     display: flex;
     justify-content: space-between;
@@ -36,7 +36,7 @@
 
 .conditions {
     border: none;
-    color: white;
+    color: var(--white);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;

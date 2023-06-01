@@ -1,7 +1,7 @@
 .footer-container {
     padding: 10px 50px;
-    background-color: #252525;
-    color: white;
+    background-color: var(--black);
+    color: var(--white);
 }
 
 .footer-social {
@@ -16,7 +16,7 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    color: white;
+    color: var(--white);
     margin-top: 20px;
     align-items: center;
 }

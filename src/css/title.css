@@ -12,7 +12,7 @@
 
 .container-title>h1,
 .container-title>h3 {
-    color: white;
+    color: var(--white);
     font-weight: bold;
     text-align: center;
 }
